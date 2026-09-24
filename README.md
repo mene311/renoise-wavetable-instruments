@@ -14,6 +14,22 @@ around C-4, so that's the comfortable register to play in.
 They were built with [renoise-wavetable-tools](https://github.com/mene311/renoise-wavetable-tools)
 out of the wavetable collections listed at the bottom.
 
+## Every instrument carries a sweep template
+
+Each SUM chain holds, switched off and pre-wired just far enough to be usable:
+
+- `SWEEP`, a shaped LFO at 16 lines per cycle with a 16 step envelope, sent to the Hydra input
+- `HYDRA`, output 1 on macro 1 (which walks the frame gates), outputs 2-9 free
+- `INSTR MACRO`, the Instrument Macros device, so macros 2-8 are available to map to anything
+- `KT -> RESET`, a Key Tracker on the LFO's reset, so every note restarts the sweep
+
+Turn `SWEEP` on and the table sweeps, once per bar, from the same point on each note. Note
+that the Instrument Macros device is not offered anywhere in the instrument editor's
+add-device menu, which makes it look impossible to create, but the file format allows it and
+Renoise loads, keeps and re-saves it. See
+[renoise-wavetable-tools](https://github.com/mene311/renoise-wavetable-tools) for how to add
+one by hand if you want it in your own instruments.
+
 ## How they are sorted
 
 Timbre clusters, measured from the single-cycle content of each table (spectral centroid
