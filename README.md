@@ -35,10 +35,10 @@ fundamental share, crest factor):
 
 ## Pitch caveat
 
-Pitch is only as good as the single cycle. Where a table's energy sits on a harmonic
-other than the first, the note you play lands an octave or a twelfth from what you hear, and playing far away from C-4 shifts the top end. Some tables just read as odd
-pitches, and that is the sampler's nature with one-cycle content rather than a bug in the
-build.
+Some of these play at a different pitch than the key you press. When the loudest part of
+the wave isn't the fundamental, the note comes out an octave or a twelfth away. High notes
+get rough too, since the harmonics that no longer fit under Nyquist fold back down. Looping
+one cycle in a sampler does that.
 
 ## Install
 
