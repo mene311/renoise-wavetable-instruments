@@ -67,9 +67,10 @@ measured features for each one.
 
 ## Credits
 
-The gate-scan mechanism was worked out from Kaidiak's instruments, shared in the Renoise
-Discord, and from Renoise's own `Utility/2, 4, 6 and 12 frame Wavetable Init` templates by
-slujr (zensphere). Thanks to both for the idea.
+The gate-scan mechanism was worked out from Kaidiak's instruments, shared in the
+Trackercorps Discord, and from Renoise's own
+`Utility/2, 4, 6 and 12 frame Wavetable Init` templates by slujr (zensphere). Thanks to
+both for the idea.
 
 ## Licence
 
