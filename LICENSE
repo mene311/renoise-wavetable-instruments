@@ -1,9 +1,13 @@
 CC0 1.0 Universal (Public Domain Dedication)
 
-The wavetable instruments in this repository are derived from CC0 source wavetables
-(WaveEdit Online, Kimura Taro free wavetables) with no added authorship claim. To the
-extent possible under law, all copyright and related rights in the contents of this
-repository are waived.
+The wavetable instruments in this repository are derived from third-party source
+wavetables, listed with their collections in provenance.tsv. No authorship is claimed over
+the waveforms: those sourced from CC0 collections (WaveEdit Online, Kimura Taro free
+wavetables) are public domain, and the rest are reproduced from freely distributed packs and
+presets.
+
+The build tooling and the file structure around them are waived to the extent possible under
+law. Rights holders can request removal of any collection; it will be removed on request.
 
 Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 

@@ -1,6 +1,6 @@
 # renoise-wavetable-instruments
 
-1,225 wavetable instruments for Renoise, sorted by timbre, built from CC0 wavetables.
+2,342 wavetable instruments for Renoise, sorted by timbre.
 
 ## What these are
 
@@ -12,7 +12,7 @@ Load one on a track, hold a note, turn the macro. The frames were cut to sound r
 around C-4, so that's the comfortable register to play in.
 
 They were built with [renoise-wavetable-tools](https://github.com/mene311/renoise-wavetable-tools)
-out of the CC0 wavetable collections listed below.
+out of the wavetable collections listed at the bottom.
 
 ## How they are sorted
 
@@ -45,19 +45,25 @@ Renoise reads subfolders, so its instrument browser shows these categories as th
 
 ## Where the waves came from
 
-Both source collections are CC0:
-
-- WAVEEDIT ONLINE (waveeditonline.com), 660 instruments
-- Kimura Taro free wavetables (kimurataro.com), 565 instruments
+| source | instruments | terms |
+|---|---|---|
+| WAVEEDIT ONLINE (waveeditonline.com) | 660 | CC0 |
+| Kimura Taro free wavetables (kimurataro.com) | 565 | CC0 |
+| Echo Sound Works "Core" (free pack) | 377 | free download, no stated redistribution terms |
+| Vital Harvest, VitalBank, Factory presets | 373 | third-party preset collections |
+| Growl packs, Discord wavetables, other user presets | 314 | third-party preset content |
+| BassTables (AJYoung) | 30 | released free for use in productions |
+| survey sample and Kaidiak's instruments | 23 | mixed sources, see provenance.tsv |
 
 `provenance.tsv` records the source table for every instrument, and `catalogue.tsv` has the
 measured features for each one.
 
-Another ~1,100 instruments were built in the same run from packs and presets whose terms
-only cover use in your own productions, or are commercial, so they are not redistributed
-here.
-
 ## Licence
 
-The source wavetables are CC0, so the instruments derived from them carry no added claim:
-treat them as public domain. The build tools are MIT.
+The build tools are MIT. The waveforms inside these instruments come from the collections
+above: the CC0 ones carry no restrictions, the rest are reproduced here from freely
+available packs and presets with their sources listed in `provenance.tsv`.
+
+No authorship is claimed over any of the source material. If you hold rights to a wavetable
+in here and want it gone, open an issue on this repository and that collection will be
+removed. No discussion needed.
