@@ -33,6 +33,13 @@ fundamental share, crest factor):
 | near sine | 8 | almost a single harmonic |
 | impulses and clicks | 1 | huge crest factor |
 
+## Pitch caveat
+
+Pitch is only as good as the single cycle. Where a table's energy sits on a harmonic
+other than the first, the note you play lands an octave or a twelfth from what you hear, and playing far away from C-4 shifts the top end. Some tables just read as odd
+pitches, and that is the sampler's nature with one-cycle content rather than a bug in the
+build.
+
 ## Install
 
 Copy the folders into the Renoise user library:
@@ -57,6 +64,12 @@ Renoise reads subfolders, so its instrument browser shows these categories as th
 
 `provenance.tsv` records the source table for every instrument, and `catalogue.tsv` has the
 measured features for each one.
+
+## Credits
+
+The gate-scan mechanism was worked out from Kaidiak's instruments, shared in the Renoise
+Discord, and from Renoise's own `Utility/2, 4, 6 and 12 frame Wavetable Init` templates by
+slujr (zensphere). Thanks to both for the idea.
 
 ## Licence
 
