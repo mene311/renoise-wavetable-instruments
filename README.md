@@ -1,12 +1,12 @@
 # renoise-wavetable-instruments
 
-2,346 wavetable instruments for Renoise, sorted by timbre.
+2,339 wavetable instruments for Renoise, sorted by timbre.
 
 Everything else I've published for Renoise is listed at <https://mene311.github.io/renoise-hub/>.
 
-Of those, 2,319 were built from a source table and are listed in `provenance.tsv`. The other 27
-are variants kept alongside them, mostly alternate registers of a few tables, so they carry no
-provenance row of their own.
+Of those, 2,319 were built from a source table and are listed in `provenance.tsv`. The other 20
+are variants kept alongside them (alternate registers of a few tables, and a handful of early
+single-table builds), so they carry no provenance row of their own.
 
 ## Donations and the duplicate check
 
