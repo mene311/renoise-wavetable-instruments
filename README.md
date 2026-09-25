@@ -8,6 +8,18 @@ Of those, 2,342 were built from a source table and are listed in `provenance.tsv
 are variants and test builds kept alongside them (alternate registers, the `Survey/` sample and
 Kaidiak's three instruments), so they carry no provenance row.
 
+## Donations and the duplicate check
+
+Instruments people send in land in `donations/`, and `tools/ingest_donations.py` files them. It
+refuses anything whose audio is already here and says which instrument it duplicates, holds a
+near match for a human to look at, and files the rest with a provenance row and a rebuilt index.
+The zips are kept afterwards, accepted or rejected, so there is a record.
+
+`hashes/index.json` carries two hashes for every published instrument. That is what lets the
+builder page at <https://mene311.github.io/renoise-wavetable-tools/> say whether a table someone
+just made is already in here, before they bother sending it. `tools/wt_hash.py` builds the index
+and explains both hashes in its docstring.
+
 ## What these are
 
 Each instrument is a gate-scan wavetable. Every frame of the table sits in its own sample
