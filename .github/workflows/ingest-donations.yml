@@ -25,12 +25,13 @@ jobs:
         run: python3 tools/ingest_donations.py
       - name: Commit the result
         run: |
-          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+          # only the paths an ingest touches: an earlier run of this committed a __pycache__
+          git add instruments hashes provenance.tsv donations .gitignore
+          if git diff --cached --quiet; then
             echo "nothing to file"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
           git commit -m "File the donations that were new"
           git push
