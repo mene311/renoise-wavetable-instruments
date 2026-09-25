@@ -1,27 +1,4 @@
 instrument	category	source_table	collection
-Deep Throat.xrni	Kaidiak	shared .xrni dissected for the format	Kaidiak, Renoise Discord
-Flenders ll.xrni	Kaidiak	shared .xrni dissected for the format	Kaidiak, Renoise Discord
-Modern Talking.xrni	Kaidiak	shared .xrni dissected for the format	Kaidiak, Renoise Discord
-survey 01 vitaltable b0.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 02 esw b1.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 03 vitaltable b1.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 04 esw b2.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 05 vitaltable b2.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 06 vitaltable b2.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 07 vitaltable b3.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 08 esw b4.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 09 vitaltable b5.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 10 vitaltable b6.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 11 vitaltable b8.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 12 vitaltable b9.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 13 vitaltable b12.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 14 vitaltable b16.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 15 vitaltable b22.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 16 vitaltable b30.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 17 vitaltable b37.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 18 vitaltable b49.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 19 vitaltable b70.xrni	Survey	see category folders	manual build (sample of mixed sources)
-survey 20 vitaltable b100.xrni	Survey	see category folders	manual build (sample of mixed sources)
 110A PWM WT.xrni	additive and organ	/home/meneses/.local/share/vital/Kimura Taro/Wavetables/Softbe Modular/110A PWM.vitaltable	Kimura Taro (CC0)
 259e-G1 WT.xrni	additive and organ	/home/meneses/.local/share/vital/Kimura Taro/Wavetables/Softbe Modular/259e-G1.vitaltable	Kimura Taro (CC0)
 259e-G2 WT.xrni	additive and organ	/home/meneses/.local/share/vital/Kimura Taro/Wavetables/Softbe Modular/259e-G2.vitaltable	Kimura Taro (CC0)

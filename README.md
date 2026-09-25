@@ -1,12 +1,12 @@
 # renoise-wavetable-instruments
 
-2,373 wavetable instruments for Renoise, sorted by timbre.
+2,346 wavetable instruments for Renoise, sorted by timbre.
 
 Everything else I've published for Renoise is listed at <https://mene311.github.io/renoise-hub/>.
 
-Of those, 2,342 were built from a source table and are listed in `provenance.tsv`. The other 31
-are variants and test builds kept alongside them (alternate registers, the `Survey/` sample and
-Kaidiak's three instruments), so they carry no provenance row.
+Of those, 2,319 were built from a source table and are listed in `provenance.tsv`. The other 27
+are variants kept alongside them, mostly alternate registers of a few tables, so they carry no
+provenance row of their own.
 
 ## Donations and the duplicate check
 
@@ -94,14 +94,13 @@ Renoise reads subfolders, so its instrument browser shows these categories as th
 | Vital Harvest, VitalBank, Factory presets | 373 | third-party preset collections |
 | Growl packs, Discord wavetables, other user presets | 314 | third-party preset content |
 | BassTables (AJYoung) | 30 | released free for use in productions |
-| survey sample and Kaidiak's instruments | 23 | mixed sources, see provenance.tsv |
 
 `provenance.tsv` records the source table for every instrument, and `catalogue.tsv` has the
 measured features for each one.
 
 ## Credits
 
-The gate-scan mechanism was worked out from Kaidiak's instruments, shared in the
+The gate-scan mechanism was worked out from instruments shared in the
 Trackercorps Discord, and from Renoise's own
 `Utility/2, 4, 6 and 12 frame Wavetable Init` templates by slujr (zensphere). Thanks to
 both for the idea.
