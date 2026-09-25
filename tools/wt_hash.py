@@ -232,6 +232,15 @@ def match(index: dict, frames: list[np.ndarray], tolerance: float = 3.0) -> dict
         if best is None or overlap > best["overlap"]:
             best = {"overlap": overlap, "of": entry["name"], "category": entry["category"],
                     "entries": len(theirs), "matched": close}
+    if best and best["overlap"] >= 0.99:
+        # Every frame of the candidate has a counterpart in that instrument, so it is the same
+        # table: what differs is which frames were picked out of the source, or the cycle
+        # length. Calling that a "variant" sent people off to donate a table the library
+        # already had.
+        best["verdict"] = "identical"
+        best["note"] = "same table, different frame selection"
+        best["mine"] = len(mine)
+        return best
     if best and best["overlap"] >= 0.8:
         best["verdict"] = "variant"
         best["mine"] = len(mine)
