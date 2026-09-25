@@ -125,13 +125,19 @@ def fnv_bytes(chunks) -> str:
 
 
 def exact_key(frames: list[np.ndarray]) -> str:
-    """FNV-1a over the frames quantised to 16 bit, each frame length included."""
+    """FNV-1a over the frames quantised to 11 bit, each frame length included.
+
+    Not 16 bit on purpose. libsndfile and Chromium's flac decoder differ in the last bits of a
+    float sample, and at 16 bit that difference lands on either side of a rounding boundary, so
+    the same file hashed to two different keys depending on who decoded it. An 11 bit grid is
+    three orders of magnitude coarser than that noise and still separates different audio.
+    """
     chunks = []
     for frame in frames:
         length = len(frame)
         chunks.append(bytes([length & 0xFF, (length >> 8) & 0xFF,
                              (length >> 16) & 0xFF, (length >> 24) & 0xFF]))
-        q = np.clip(np.floor(np.asarray(frame, dtype=np.float64) * 32767.0 + 0.5), -32768, 32767)
+        q = np.clip(np.floor(np.asarray(frame, dtype=np.float64) * 2047.0 + 0.5), -2047, 2047)
         ints = q.astype("<i2")
         chunks.append(ints.tobytes())
     return fnv_bytes(chunks)
